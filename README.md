@@ -55,7 +55,7 @@ Simula, developed between 1962 and 1967 by Kristen Nygaard and Ole-Johan Dahl, w
 
 In 1966, [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay),considered as the father of the **Oriented Object Programming** coined the term **object oriented programming** at grad school. The idea was to use encapsulated mini-computers in software which communicated via message passing rather than direct data sharing — to stop breaking down programs into separate **data structures** and **procedures**.
 
-Then, come SmallTalk in the game by Alan Kay, Dan Ingalls, Adele Goldberg, and others at Xerox PARC, based on Simula, the first that implemented purely the oriented object approach (more OO than Simula); you could not even create a "Hello Word" program without creating a class. Simula was the first recognized object programming language but did not implement it purely, it is ALGOL 60 extended with classes and objects.
+Then, come SmallTalk in the game by Alan Kay, Dan Ingalls, Adele Goldberg, and others at Xerox PARC, influenced by Simula, the first that implemented purely the oriented object approach (more OO than Simula); you could not even create a "Hello Word" program without creating a class. Simula was the first recognized object programming language but did not implement it purely, it is ALGOL 60 extended with classes and objects.
 
 ## Key features of Smalltalk's approach to OOP:
 
@@ -64,3 +64,16 @@ Then, come SmallTalk in the game by Alan Kay, Dan Ingalls, Adele Goldberg, and o
 - **Message Passing**: Smalltalk relies heavily on message passing between objects. Objects communicate by sending messages to each other, and method invocation is achieved through this mechanism.
 
 - **Dynamic Typing**: Smalltalk is dynamically typed, meaning that the type of a variable is determined at runtime. This flexibility allows for a high degree of dynamism in the language.
+
+[In a 2003 email exchange](https://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en), Alan Kay clarified what he meant when he called Smalltalk “object-oriented”:
+
+> “OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.”
+> ~ Alan Kay
+
+In other words, according to Alan Kay, the essential ingredients of OOP are:
+
+- Message passing
+- Encapsulation
+- Dynamic binding
+
+Notably, inheritance and subclass polymorphism were NOT considered essential ingredients of OOP by Alan Kay, the man who coined the term and brought OOP to the masses.
