@@ -1,8 +1,16 @@
 # JS-OOP-handsOn-guide
 
+<img src="./assets/images/poo.png">
+
+## Introduction
+
 This repository is designed to provide hands-on demonstrations and clear examples in Javascript to help you understand and implement OOP concepts effectively.
 
-## Contents
+## Authors:
+
+- @CREDO23 <bakerathierry@gmail.com>
+
+## Table of contents
 
 - [Oriented Object Programming paradigm](<Oriented Object Programming paradigm>)
 - [History](History)
@@ -10,6 +18,7 @@ This repository is designed to provide hands-on demonstrations and clear example
   - Object
   - Class
   - Constructor
+  - Class-based vs prototype-based
   - Encapsulation
   - Method
   - Instance Variable
@@ -22,9 +31,9 @@ This repository is designed to provide hands-on demonstrations and clear example
   - Abstract Class
   - Destructor
   - Composition
+  - Delegation
+  - Open recursion
   - Mixins
-
-  <img src="./assets/images/poo.png">
 
 # Oriented Object Programming paradigm
 
@@ -32,4 +41,4 @@ Object-oriented object programming is a programming paradigm that is based on ob
 
 [[ILlustration]]
 
-# History
+# Genesis of oriented object programming
