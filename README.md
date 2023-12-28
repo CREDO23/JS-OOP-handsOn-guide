@@ -1,4 +1,4 @@
-# JS-OOP-handsOn-guide
+# JS OOP hands-on guide
 
 <img src="./assets/images/poo.png">
 
@@ -37,7 +37,7 @@ This repository is designed to provide hands-on demonstrations and clear example
 
 # Oriented Object Programming paradigm
 
-Object-oriented object programming is a programming paradigm that is based on objects. In general, such objects are models of real-world entities in the program (e.g., a person, a vehicle, a home, etc.); each entity has its own characteristics (properties/attributes) and actions (methods/procedures) that are organized in a single location called object.
+Object-oriented object programming is a programming paradigm that is based on objects. In general, such objects are models of real-world entities in the program (e.g.: a person, a vehicle, a home, etc.); each entity has its own characteristics (properties/attributes) and actions (methods/procedures) that are organized in a single location called object.
 
 [[ILlustration]]
 
