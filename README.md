@@ -93,7 +93,7 @@ end.
 
 This Simula code defines two classes, `Person` and `Program`. The `Person` class has attributes `age` and `name`, along with methods to set these attributes (`SetAge` and `SetName`) and a method to display information about the person (`DisplayInfo`). The Program class then creates an instance of the `Person` class, sets its attributes, and displays the information.
 
-[Illustration]
+<img src="./assets//images//object-simula.png">
 
 At graduate school in 1966, [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay), considered the person behind the creation of Object Oriented Programming, came up with the object oriented programming paradigm. He played a crucial role in the creation of Smalltalk, an influential programming language that covers many OOP concepts. Alan Kay's thoughts on OOP were formed by his computer science experiences, perceptions, and goals.
 
@@ -142,7 +142,7 @@ In this smalltalk code:
 - The `Person` class has `name` and `age` as instance variables and `initialize`, `setName`, and `displayInfo` as methods.
 - An instance of the `Person` class (`johnDoe`) is created, initialized, and its information is displayed in the Transcript.
 
-[illustration]
+<img src="./assets//images//smalltalk-summary.png">
 
 [In a 2003 email exchange](https://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en), Alan Kay clarified what he meant when he called Smalltalk “object-oriented”:
 
@@ -160,4 +160,4 @@ In other words, according to Alan Kay, the essential ingredients of OOP are:
 Simula and Smalltalk both made substantial contributions to the development of object-oriented programming, but with distinct focuses and methodologies. Simula emphasized simulation and modeling, introducing the concepts of classes and objects, whereas Smalltalk emphasized simplicity, universality, and the idea that everything is an object, with a heavy dependence on message passing.
 
 It is critical to honor and recognize the amazing pioneers who shaped Object-Oriented Programming. Understanding the historical background and growth of OOP allows us to appreciate the strength and variety it provides as a programming paradigm.
- 
+
