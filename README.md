@@ -159,5 +159,5 @@ In other words, according to Alan Kay, the essential ingredients of OOP are:
 
 Simula and Smalltalk both made substantial contributions to the development of object-oriented programming, but with distinct focuses and methodologies. Simula emphasized simulation and modeling, introducing the concepts of classes and objects, whereas Smalltalk emphasized simplicity, universality, and the idea that everything is an object, with a heavy dependence on message passing.
 
-It is critical to honor and recognize the amazing pioneers who shaped Object-Oriented Programming. Understanding the historical background and growth of OOP allows us to appreciate the strength and variety it provides as a programming paradigm. Let us see this amazing paradigm 😍 in action with examples in the following section.
- 
+It is critical to honor and recognize the amazing pioneers who shaped Object-Oriented Programming. Understanding the historical background and growth of OOP allows us to appreciate the strength and variety it provides as a programming paradigm.
+
