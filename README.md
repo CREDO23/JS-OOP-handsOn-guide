@@ -1,6 +1,6 @@
 # JS OOP hands-on guide
 
-<img src="./assets/images/poo.png">
+<img src="./assets/images/oop.png">
 
 ## Introduction
 
@@ -32,6 +32,7 @@ This repository is designed to provide hands-on demonstrations and clear example
   - Destructor
   - Composition
   - Delegation
+  - Association
   - Open recursion
   - Mixins
 
