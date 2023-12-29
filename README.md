@@ -37,9 +37,7 @@ This repository is designed to provide hands-on demonstrations and clear example
 
 # Oriented Object Programming paradigm
 
-Object-oriented object programming is a programming paradigm that is based on objects. In general, such objects are models of real-world entities in the program (e.g.: a person, a vehicle, a home, etc.); each entity has its own characteristics (properties/attributes) and actions (methods/procedures) that are organized in a single unit called object.
-
-Those predefined units allow you to speed up the programming process and simplify software maintenance.
+Object-oriented object programming is a programming paradigm that is based on objects. In general, such objects are models of real-world entities in the program (e.g.: a person, a vehicle, a home, etc.); each entity has its own characteristics (properties/attributes) and actions (methods/procedures) that are organized in a single unit called object. Those predefined units allow you to speed up the programming process and simplify software maintenance.
 
 
 [[ILlustration]]
@@ -47,7 +45,7 @@ Those predefined units allow you to speed up the programming process and simplif
 
 # Genesis of oriented object programming
 
-Simula, a superset of ALGOL 60 created between 1962 and 1967 by Kristen Nygaard and Ole-Johan Dahl, was the first language to offer object-oriented programming. An ALGOL program, represented by a block of code, included not just a sequence of operations on data, but also the structure of the data itself. Simula expanded on this idea by adding the concepts of encapsulation and inheritance. Simula also introduced crucial notions such as objects, classes, and virtual methods, which are now an integral aspect of object-oriented programming.
+[Simula](https://en.wikipedia.org/wiki/Simula), a superset of [ALGOL 60](https://en.wikipedia.org/wiki/ALGOL) created between 1962 and 1967 by Kristen Nygaard and Ole-Johan Dahl, was the first language to offer object-oriented programming. An ALGOL program, represented by a block of code, included not just a sequence of operations on data, but also the structure of the data itself. Simula expanded on this idea by adding the concepts of encapsulation and inheritance. Simula also introduced crucial notions such as objects, classes, and virtual methods, which are now an integral aspect of object-oriented programming.
 
 ## Key features of Simula's approach to OOP:
 
@@ -58,7 +56,7 @@ Simula, a superset of ALGOL 60 created between 1962 and 1967 by Kristen Nygaard 
 - Simula introduced the concept of **virtual procedures** (later referred to as virtual methods or polymorphic methods), which could be overridden in subclasses. This adds to polymorphism by allowing distinct classes to react to the same method call in different ways.
 
 
-At graduate school in 1966, [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay), considered the person behind the creation of Object Oriented Programming, developed the phrase object oriented programming. To avoid breaking down programs into distinct **data structures and procedures**, the aim was to utilize encapsulated mini-computers in software that interacted by message passing rather than direct data sharing.
+At graduate school in 1966, [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay), considered the person behind the creation of Object Oriented Programming, came up with the object oriented programming paradigm. To avoid breaking down programs into distinct **data structures and procedures**, the aim was to utilize encapsulated mini-computers in software that interacted by message passing rather than direct data sharing.
 
 SmallTalk in the game by Alan Kay, Dan Ingalls, Adele Goldberg, and others at Xerox PARC, influenced by Simula, was the first that implemented purely the object-oriented approach (more OO than Simula); you couldn't even construct a "Hello Word" program without defining a class. Simula was the first acknowledged object programming language, but it was not implemented properly; instead, it is ALGOL 60 with classes and objects appended.
 
