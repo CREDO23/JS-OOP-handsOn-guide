@@ -13,8 +13,8 @@ This repository is designed to provide hands-on demonstrations and clear example
 ## Table of contents
 
 - [Oriented Object Programming paradigm](<Oriented Object Programming paradigm>)
-- [History](History)
-- [Terminologies with examples](<Terminologies & examples>)
+- [Genesis](<Genesis of oriented object programming1>)
+- [Terminology & examples](<Terminology & examples>)
   - Object
   - Class
   - Constructor
@@ -162,3 +162,4 @@ Simula and Smalltalk both made substantial contributions to the development of o
 
 It is critical to honor and recognize the amazing pioneers who shaped Object-Oriented Programming. Understanding the historical background and growth of OOP allows us to appreciate the strength and variety it provides as a programming paradigm.
 
+# Terminology & examples
