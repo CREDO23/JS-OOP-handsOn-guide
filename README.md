@@ -41,7 +41,7 @@ This repository is designed to provide hands-on demonstrations and clear example
 Object-oriented object programming is a programming paradigm that is based on objects. In general, such objects are models of real-world entities in the program (e.g.: a person, a vehicle, a home, etc.); each entity has its own characteristics (properties/attributes) and actions (methods/procedures) that are organized in a single unit called object. Those predefined units allow you to speed up the programming process and simplify software maintenance.
 
 
-[[ILlustration]]
+[[Illustration]]
 
 
 # Genesis of oriented object programming
