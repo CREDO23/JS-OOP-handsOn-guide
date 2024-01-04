@@ -1,5 +1,6 @@
-import { getLineNumber } from "../../../helpers/getLineNumber.js"
-import { lineNumberStyle , successOutStyle} from "../../../helpers/styles.js"
+import { ln } from "../../../helpers/getLineNumber.js"
+import { lns1 , lns2, ss} from "../../../helpers/styles.js"
+import { s1, s2, s4 } from "../../../helpers/separators.js"
 
 
 // ======= CREATING OBJECTS =========
@@ -12,9 +13,9 @@ const computer = {} // Also known as literal syntax
 // ----- 2. Using the Object constructor -----
 const person = new Object()
 
-console.log(`\n ${lineNumberStyle(`Line ${getLineNumber()} :`)}\n
-- The type of the variable 'person' is ${ successOutStyle(`${typeof person}`)},
-- The type of the variable 'computer' is ${  successOutStyle(`${typeof computer}`) }`)
+console.log(`${s1} ${lns1(`=> Line ${ln()} (CREATING OBJECTS) :`)}${s1}
+- The type of the variable 'person' is ${ss(`${typeof person}`)},
+- The type of the variable 'computer' is ${ ss(`${typeof computer}`)} ${s4}`)
 
 
 
@@ -25,7 +26,7 @@ console.log(`\n ${lineNumberStyle(`Line ${getLineNumber()} :`)}\n
 
 
 
-// ======= ADDING PROPERTIES / CHANGING EXISTING ONES =========
+// ======= ADDING PROPERTIES / MODIFYING EXISTING ONES =========
 
 // ------ 1. When creating the object ------
 const admin = {
@@ -35,9 +36,8 @@ const admin = {
     "is active" : true // We can also use multiwords keys
 }
 
-console.log(`\nLine 29:
-- The object 'admin'  has been created with the following properties: 
------> ${Object.keys(admin)}`)
+console.log(`${s1} ${lns1(`=> Line ${ln()} ADDING PROPERTIES / MODIFYING EXISTING ONES`)} : ${s1}
+- The object 'admin'  was created with the following properties: ${ss(`[${Object.keys(admin).join(', ')}]`)} ${s2}`)
 
 
 
@@ -45,29 +45,27 @@ console.log(`\nLine 29:
 
 const user = {}
 
-console.log(`\nLine 36:
-- The object 'user' has been created without properties: 
------> ${Object.keys(user)}`)
+console.log(` ${lns2(`Line ${ln()} :`)} ${s1}
+- The object 'user' was created without properties: [${Object.keys(user)}] ${s2}`)
 
 user.name = 'Joe',
 user.gender = 'Male'
 
-console.log(`\nLine 42:
-- Now the object 'user' has the following properties: 
------> ${Object.keys(user)}`)
+console.log(` ${lns2(`Line ${ln()} :`)} ${s1}
+- Now the object 'user' has the following properties: [${Object.keys(user).join(', ')}] ${s2}`)
 
 
 
 
 // ------ 3. Changing existing properties ------
 
-console.log(`\nLine :
-- Before the line [], the object 'admin' had the property age set to ${admin.age}`)
+console.log(` ${lns2(`Line ${ln()} :`)} ${s1}
+- So far, the object 'admin' has the property 'age' set to ${ss(`${admin.age}`)} ${s2}`)
 
 admin.age = 22
 
-console.log(`\nLine []
-- Now the object 'admin' has the property 'age' set to ${admin.age}`)
+console.log(` ${lns2(`Line ${ln()} :`)} ${s1}
+- Now the object 'admin' has the property 'age' set to ${ss(`${admin.age}`)} ${s4}`)
 
 
 
