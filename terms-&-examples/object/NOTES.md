@@ -6,7 +6,7 @@ Because the term "object" is the essential building element of oriented object p
 
 Objects, in contrast to other Datatypes in Javascript, are used to store keyed collections of multiple information and more complex data.
 
-The easiest approach to create an object in javascript is using curly brackets `{...}` and an optional list of properties within them separated by commas. A property is a **"key: value"** pair, where key is a string (sometimes known as a **"property name"**) and value can be anything.
+The easiest approach to create an object in javascript is using curly braces `{...}` and an optional list of properties within them separated by commas. A property is a **"key: value"** pair, where key is a string (sometimes known as a **"property name"**) and value can be anything.
 
 E.g:
 

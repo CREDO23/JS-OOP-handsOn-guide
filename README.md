@@ -15,20 +15,20 @@ This repository is designed to provide hands-on demonstrations and clear example
 - [Oriented Object Programming paradigm](<Oriented Object Programming paradigm>)
 - [Genesis](<Genesis of oriented object programming1>)
 - [Terminology & examples](<Terminology & examples>)
-  - Object
-  - Class
+  - [Object](/terms-&-examples/object/)
+  - [Class](/terms-&-examples/class/)
   - Constructor
   - Class-based vs prototype-based
-  - Encapsulation
-  - Method
-  - Instance Variable
   - Class Variable
+  - Instance Variable
+  - Method
+  - Encapsulation
   - Inheritance
+  - Abstraction
+  - Abstract Class
   - Polymorphism
     - Compile-time polymorphism (Method Overloading)
     - Runtime polymorphism (Method Overriding)
-  - Abstraction
-  - Abstract Class
   - Destructor
   - Composition
   - Delegation
