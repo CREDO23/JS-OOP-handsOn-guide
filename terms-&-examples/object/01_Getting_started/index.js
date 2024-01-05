@@ -13,7 +13,7 @@ const computer = {} // Also known as literal syntax
 // ----- 2. Using the Object constructor -----
 const person = new Object()
 
-console.log(`${s1} ${lns1(` => Line ${ln()} (CREATING OBJECTS) : `)}${s1}
+console.log(`${s1} ${lns1(` => Line ${ln()} CREATING OBJECTS : `)}${s1}
 - The type of the variable 'person' is ${ps(typeof person)},
 - The type of the variable 'computer' is ${ps(typeof computer)} ${s4}`)
 
