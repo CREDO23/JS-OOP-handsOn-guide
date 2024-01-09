@@ -7,6 +7,7 @@ import styleParser from "./styleParser.js";
  * LINE NUMBER STYLE [LEVEL] -> lns1
  * POSITIVE OUTPUT STYLE -> ps
  * NEGATIVE OUTPUT STYLE -> ns
+ * NOTES -> nt
  * 
  * Short names are used for simplicity purposes.
  */
@@ -18,3 +19,5 @@ export const lns2 = styleParser(["bgGreen"]);
 export const ps = styleParser(["green"]);
 
 export const ns = styleParser(["red"]);
+
+export const nt = styleParser(["yellow", "bold"]);
