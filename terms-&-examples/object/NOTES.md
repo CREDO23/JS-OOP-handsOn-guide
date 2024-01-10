@@ -1,12 +1,12 @@
 # Object
 
-Because the term "object" is the essential building element of oriented object programming, we must ensure that we understand it.
+Because the "object" is the essential building element of oriented object programming, we must ensure that we understand it.
 
 [[Illustration]]
 
 Objects, in contrast to other Datatypes in Javascript, are used to store keyed collections of multiple information and more complex data.
 
-The easiest approach to create an object in javascript is using curly braces `{...}` and an optional list of properties within them separated by commas. A property is a **"key: value"** pair, where key is a string (sometimes known as a **"property name"**) and value can be anything.
+The easiest approach to create an object in javascript is using curly braces `{...}` and an optional list of properties within them separated by commas. A property is a **"key: value"** pair, where key is a string or a symbol (sometimes known as a **"property name"**) and value can be anything.
 
 E.g:
 
@@ -19,7 +19,7 @@ E.g:
 ```
 
 
-An object can be imagined as a cabinet containing signed files. The key saves each item of data in its own file. It is simple to locate a file by key or to add/remove a file.
+An object can be imagined as a cabinet containing signed files. The key saves each item of data in its own file. It is simple to locate a file by key or to add/remove a file with its key.
 
 [[Illustration]]
 
@@ -38,7 +38,7 @@ Here, the type of Laptop and desktop is Computer.
 
 [[Illustration]]
 
-In this part, we will learn how to deal with objects in Javascript without using a class. I have just presented the notion of class here for clarification purposes and to let you know that in oriented object programming, objects are simply instances of a type (class), which we will discuss in the following section.
+In this part, we will learn how to deal with objects in Javascript without using a class. I have just presented the notion of class here for clarification purposes and to let you know that in oriented object programming, objects are simply instances of a type (class, a function that helps to create objects instances), which we will discuss in the following section.
 
 As previously stated, an object acts as a real-world entity, which implies it should have certain characteristics:
 
