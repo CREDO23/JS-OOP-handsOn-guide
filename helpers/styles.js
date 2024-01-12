@@ -8,6 +8,7 @@ import styleParser from "./styleParser.js";
  * POSITIVE OUTPUT STYLE -> ps
  * NEGATIVE OUTPUT STYLE -> ns
  * NOTES -> nt
+ * BULLET POINT -> bp
  * 
  * Short names are used for simplicity purposes.
  */
@@ -21,3 +22,5 @@ export const ps = styleParser(["green"]);
 export const ns = styleParser(["red"]);
 
 export const nt = styleParser(["yellow", "bold"]);
+
+export const bp = styleParser(["blue", "bold"]);
