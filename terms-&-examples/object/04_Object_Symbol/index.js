@@ -89,7 +89,7 @@ console.log(` ${lns1(` => Line ${ln()} ADDING METADATA / PREVENTING PROPERTIES C
   (student[lastaccessAverage]) -----> ${ps(student[lastaccessAverage])}
   
 - It will be invisible if we try to get the student's properties with (Objec.keys(student)) -----> ${ns(Object.keys(student).join(', '))}
-  or within a for..in loop
+  or within a for..in loop, it is not enumerable.
   
 - To see all property names including symbols, we can use (Reflect.ownKeys(student)) ---->`, Reflect.ownKeys(student), s2)
 
