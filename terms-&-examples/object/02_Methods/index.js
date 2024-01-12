@@ -81,7 +81,8 @@ console.log(` ${lns2(`From line ${ln() - 6} to line ${ln() - 2} : `)} ${s1}
  * 
  * To accomplish that, we can use the keyword [this] to refer to the current object.
  * We can also reference the object directly by its name. Here, the function is bound to the object.
- * In the next section, we will see that with the keyword [this], the function is not bound to the object.
+ * Later, we will see that with the keyword [this], the function is not bound to the object. The same
+ * function can be reused with other objects.
  */
 
 const student = {
