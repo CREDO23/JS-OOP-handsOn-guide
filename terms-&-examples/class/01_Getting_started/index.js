@@ -8,6 +8,7 @@ import { s1, s2, s4 } from "../../../helpers/separators.js"
 
 /**
  * In JavaScript, we use the keyword "class" followed by braces to define classes
+ * and arbitrary set of properties or methods inside them.
  */
 
 class Computer {
@@ -26,7 +27,7 @@ class Computer {
 const comp1 = new Computer()
 
 console.log(`${s1} ${lns1(` => Line ${ln()} SYNTAX : `)}${s1}
-- We created a class 'Computer' that represents a computer in our program.
+- We created a class 'Computer' that can represent a computer in our program.
 
 - Then, created a computer object 'comp1' by instantiating the class 'Computer'
 
@@ -64,7 +65,8 @@ console.log(`${s1} ${lns1(` => Line ${ln()} SYNTACTIC SUGAR : `)} ${s1}
 
 /**
  * 
- * We are going to declare something equivalent to Computer without the "class" keyword.
+ * We are going to reprduce something similar to Computer without the "class" keyword.
+ * We are going to do it with a "function" keyword.
  * 
  */
 
@@ -85,9 +87,10 @@ function Cmputer () {
 const comp2 = new Cmputer()
 
 console.log(` ${lns2(`From line ${ln() - 15} to line ${ln() - 2} : `)} ${s1}
-- We declared a function 'Cmputer' and defined the same properties and methods of the class 'Computer'.
+- We declared a function 'Cmputer' and defined the same properties and methods of the class 'Computer'
+  inside it referencing the current object [this].
 
-- And used it to create an kind of Computer 'comp2' that works exactky as 'comp1':
+- And used it to create an kind of Cmputer 'comp2' that works exactky as 'comp1':
 
 - (comp2.check_storage_space() -----> ${ps(comp2.check_storage_space())}
 
@@ -95,10 +98,10 @@ console.log(` ${lns2(`From line ${ln() - 15} to line ${ln() - 2} : `)} ${s1}
 
 /**
  * 
- * As stated above, "class" is a kind of function ! Not exactly the same because there are still some differences
+ * As stated above, "class" is a kind of function ! Not exactly "a function" because there are still some differences
  * between those two declarations we have just used to create similar outputs:
  * 
- * - Class methods are not enumerable, so we cannot access them in a for..in loon or with (Object.keys()) but with 
+ * - Methods declared inside classes are not enumerable, so we cannot access them within a for..in loon or with (Object.keys()) but with 
  *   function declaration, they are (which is not relevant since they are not considered as attributes)
  * 
  * - Classes use the "strict mode" for all code inside them in constrast to function declarations.
@@ -112,7 +115,7 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
 
 - ${nt('Note: ')} Right after declaring the class, a function is created with the same
   name as the class, in our case, "Computer.". This is what we call a "constructor," 
-  generally defined inside the class. If not defined (our case), a default one is created (empty).
+  generally defined inside the class. If not defined (our case), a default one is created (an empty).
   The goal of the constructor is to perform initialization when creating new instances of the class.
 
 
@@ -124,10 +127,9 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
   executes
   
 - ${bp("[2]")} All methods defined are added to the prototype of that function created after the class's declaration
-  (the constructor): Each function in JavaScript has a "prototype" property automatically created after
-  its definition. The "prototype" property is an object used to add methods or properties, thus making them
-  accessible for all instances that will be created with that function (constructor). So the prototype of all
-  instances will be the prototype of the constructor which containts all shared methods and properties${s2}`)
+  (the constructor): Each function in JavaScript has a "prototype" property automatically created and attached to it after
+  its definition. The "prototype" property is an object in which we can add methods or properties; it is then used as the
+  prototype of all instances created with it, thus all of them will share the same methods.${s2}`)
 
 
 
