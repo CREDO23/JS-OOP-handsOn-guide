@@ -109,10 +109,11 @@ console.log(`${lns1(` => Line ${ln()} USE AND BENEFITS OF SQUARE BRACKETS : `)} 
  
 - To access multi word properties, we can only use the brackets notation: (admin["is active"]) -----> ${ps(admin["is active"])}
  
-- The bracket notation work with all kind of property name, so we can access other properties with the
+- The brackets notation also works with all kind of property name, so we can also access other properties with the
   brackets notation [e.g : (admin["id"]) -----> ${ps(admin["id"])}
 
-- The brackets notation work also when creating the object (const user = {["name"] : "John"}).
+- The brackets notation work also when creating the object (const user = {["name"] : "John"}). Generarly used to add computed
+  properties when declaring an object. (const user = {[a computed value] : 34})
   
 - Quotes are required in the brackets notation, any type of quote will work! ${s2}`)
 
@@ -189,8 +190,8 @@ console.log(`${lns1(` => Line ${ln()} PROPERTY NAME LIMITATIONS : `)} ${s1}
 - I wanted to show you how property do not have limit in term of naming (in contrast to variables), that is just because all of them are automatically converted into string:
 
 E.g:
-    - return -----> "return"
-    - 0      -----> "0" ${s4}`)
+    - return -----> will be "return"
+    - 0      -----> will be "0" ${s4}`)
 
 
 
