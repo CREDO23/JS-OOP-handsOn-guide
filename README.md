@@ -15,26 +15,6 @@ This repository is designed to provide hands-on demonstrations and clear example
 - [Oriented Object Programming paradigm](<Oriented Object Programming paradigm>)
 - [Genesis](<Genesis of oriented object programming1>)
 - [Terminology & examples](<Terminology & examples>)
-  - [Object](/terms-&-examples/object/)
-  - [Class](/terms-&-examples/class/)
-  - Constructor
-  - Class-based vs prototype-based
-  - Class Variable
-  - Instance Variable
-  - Method
-  - Encapsulation
-  - Inheritance
-  - Abstraction
-  - Abstract Class
-  - Polymorphism
-    - Compile-time polymorphism (Method Overloading)
-    - Runtime polymorphism (Method Overriding)
-  - Destructor
-  - Composition
-  - Delegation
-  - Association
-  - Open recursion
-  - Mixins
 
 # Oriented Object Programming paradigm
 
@@ -163,3 +143,18 @@ Simula and Smalltalk both made substantial contributions to the development of o
 It is critical to honor and recognize the amazing pioneers who shaped Object-Oriented Programming. Understanding the historical background and growth of OOP allows us to appreciate the strength and variety it provides as a programming paradigm.
 
 # Terminology & examples
+  - [Object](/terms-&-examples/object/)
+  - [Class](/terms-&-examples/class/)
+  - Class-based vs prototype-based
+  - Encapsulation
+  - Inheritance
+  - Abstraction
+  - Abstract Class
+  - Polymorphism
+    - Compile-time polymorphism (Method Overloading)
+    - Runtime polymorphism (Method Overriding)
+  - Composition
+  - Delegation
+  - Association
+  - Open recursion
+  - Mixins
