@@ -8,12 +8,12 @@ import { s1, s2, s4 } from "../../../helpers/separators.js"
 /**
  * 
  * In previous parts, we saw that only symbols and strings may serve as key for objects.
- * If another type of is used as key, it is automatically converted to a string (e,g: true becomes "true")
+ * If another type is used as key, it is automatically converted to a string (e,g: true becomes "true")
  * 
  * In JavaScript, a symbol is a primitive value (unique) with an optional description. Two symbols can have
  * the same description and still be different, so description are just treated as label.
  * 
- * Symbols are immutable, you can’t change them, no matter how much you try.
+ * Symbols are immutable (like other primitive values), you can’t change them, no matter how much you try.
  * 
  */
 
@@ -29,7 +29,8 @@ console.log(`${s1} ${lns1(` => Line ${ln()} SYMBOLE TYPE : `)}${s1}
 
 - (id1.description) -----> ${ps(id1.description)}
 
-- Every 'Symbol()' call is guaranteed to return a unique Symbol
+- Every 'Symbol()' call is guaranteed to return a unique Symbol. That's why we stored them in 'id1' and 'id2' so that
+  we can access the same symbol.
 
 - Symbol() is a function and not a constructor, reason why we don't use the 'new' keywords to create new ones  ${s4}`)
 
@@ -192,7 +193,7 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
  * 
  * It's mean if we create two symbols that have the same description(name/key), they will refer the same value.
  * 
- * Sometimes we want same-named symbols to be same entities.
+ * Sometimes we want it; same-named symbols to be same entities.
  * 
  */
 
