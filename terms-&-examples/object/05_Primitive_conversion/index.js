@@ -8,23 +8,23 @@ import { s1, s4 } from "../../../helpers/separators.js"
 
 /**
  * 
- * In javascript, if we try to add or subtract two objects or even print to the console,
+ * In javascript, if we try to add or subtract two objects or even print them to the console,
  * the javascript engine will convert them to appropriate types to perform the operation.
  * 
- * Let assume that we have class that represents 'Banknote' in our program and give the possibility
- * to add, substract, divide and multiply instances.
+ * Let assume that we have a class that represents 'Banknote' in our program and give the possibility
+ * to add, substract, divide and multiply instances (objects).
  * 
  * So, what happens when we add or substract two objects ? Let us experiment!
  * 
  */
 
 const banknote1 = {
-    amount : 500,
+    amount : 5,
     currency : 'USD',
 }
 
 const banknote2 = {
-    amount : 100,
+    amount : 10,
     currency : 'USD',
 }
 
@@ -57,7 +57,7 @@ console.log(`${s1} ${lns1(` => Line ${ln()} USING OBJECT IN ARITHMETIC OPERATION
  * We will be using what we call "hints" to personalize how the Javascript engines should convert our objects according to
  * a type of conversion (number, string)
  * 
- * There is also a default hint that the engive uses when it is confused with which hint (number or string) it should apply. Generally,
+ * There is also a default hint that the engine uses when it is confused with which hint (number or string) it should apply. Generally,
  * when we are using the binary "+" operator, that can mean concatenation for string or addition for numbers or the "==" operator.
  * 
  * There are three special methods that helps us to personalize the conversion:
@@ -68,9 +68,9 @@ console.log(`${s1} ${lns1(` => Line ${ln()} USING OBJECT IN ARITHMETIC OPERATION
  * 
  * When the engine want to convert objects, it calls one of them according the need:
  * 
- * - [Symbole.toPrimitive](hint) if it exists or
- * - toString() or valueOf() for the hint -> "string"
- * - valueOf() or toString() for the hint -> "number" or "default"
+ * - [Symbole.toPrimitive](hint) if it exists OR
+ * - toString() or valueOf() for the hint -> "string" : (E.g: String(Object))
+ * - valueOf() or toString() for the hint -> "number" or "default" (E.g: Number(Object))
  * 
  * The engine looks first for the symbolic methode 'toPrimitive' and if it does not exist,
  * then look for 'toString' or 'valueOf'
@@ -78,7 +78,7 @@ console.log(`${s1} ${lns1(` => Line ${ln()} USING OBJECT IN ARITHMETIC OPERATION
  */
 
 const banknote3 = {
-    amount: 340,
+    amount: 10,
     currency: 'EURO',
 
     [Symbol.toPrimitive](hint){
@@ -95,7 +95,7 @@ const banknote3 = {
 // OR
 
 const banknote4 = {
-    amount: 640,
+    amount: 50,
     currency: 'EURO',
 
     toString(){
