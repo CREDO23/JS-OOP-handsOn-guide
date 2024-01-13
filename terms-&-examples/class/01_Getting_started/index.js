@@ -1,5 +1,5 @@
 import { ln } from "../../../helpers/getLineNumber.js"
-import { lns1 , lns2, ps, ns, nt, bp} from "../../../helpers/styles.js"
+import { lns1 , lns2, ps, nt, bp, ns} from "../../../helpers/styles.js"
 import { s1, s2, s4 } from "../../../helpers/separators.js"
 
 
@@ -129,7 +129,7 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
 - ${bp("[2]")} All methods defined are added to the prototype of that function created after the class's declaration
   (the constructor): Each function in JavaScript has a "prototype" property automatically created and attached to it after
   its definition. The "prototype" property is an object in which we can add methods or properties; it is then used as the
-  prototype of all instances created with it, thus all of them will share the same methods.${s2}`)
+  prototype of all instances created with the function attached to it, thus all of them will share the same methods.${s2}`)
 
 
 
@@ -142,6 +142,62 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
 
 // ======= CLASS EXPRESSION =======
 
+/**
+ * 
+ * Classes, like functions, can be declared within another expression, passed around, returned, assigned, and so on.
+ * 
+ */
+
+// ------- 1. Assigned to a variable -------
+
+const User = class UserClass { // Named
+  firstname = ""
+  lastname = ""
+}
+
+// OR
+
+const Student = class { // anonymous
+  firstname = ""
+  lastname = ""
+  score = 0
+}
+
+// ------- 1. Returned from a function -------
+
+function makeAdminClass () {
+
+  // Instructions
+
+  return class {
+    firstname = ""
+    lastname = ""
+  }
+}
+
+const Admin = makeAdminClass()
+
+console.log(`${s1} ${lns1(` => Line ${ln()} CLASS EXPRESSION : `)} ${s1}
+- The main difference between a class declaration (class User {}) and a class expression (const User = class [className] {})
+  is the class name.
+  
+- With a class expression, the class name can be omited (anonymous class)
+
+- We created a 'User' variable that holds a class expression: (User) -----> ${ps(User)};
+
+  we can use the 'User' variable to reference that class expression and perfrom some operation like instaciating new object
+  (new User) ----->`, new User(), `
+
+- We created a 'Student' variable that holds a class declaration without a name (an anonymous class)
+  (Student) -----> ${ps(Student)}
+  
+  (new Student) ----->`, new Student(), `
+  
+- We also created a 'makeAdminClass' function that returns a class expression (anonymous class)
+  (makeAdminClass()) -----> ${ps(makeAdminClass())}
+  
+  (new makeAdminClass()) ----->`, new makeAdminClass(), s4)
+
 
 
 
@@ -153,13 +209,77 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
 
 // ======= GETTER AND SETTER =======
 
+/**
+ * 
+ * We have already seen how to add / set properties for an object, methods as well.
+ * 
+ * Later, we will need some mechanism to protect our objects (encapsulating data) so
+ * that a third part cannot directly interact with the object's properties (internal state).
+ * We can also add some validation when a third party attempts to modify or add a value to a
+ * specific property.
+ * 
+ * One of the solution is to use getters/setters or accessors/mutators. They are commonly
+ * used when dealing with private properties. (We will see them later.)
+ * 
+ * Getters/setters are also applicable for objects.
+ * 
+ * [1] GETTER
+ * 
+ * A getter is a method that retrieves the value of a instance property.
+ * It provides read access to that property and the possibility to customize the output.
+ * 
+ * [2] SETTER
+ * 
+ * A setter is a method that modifies the value of a instance property.
+ * It provides write access to to that property allowing validation of new data.
+ * 
+ */
 
 
+class Computer1 {
 
+    // Properties
+    _storage = 512
+    ram = 16
+    battery_life = 10
 
+    get storage () {
+      if (this._storage <= 512){
+        return this._storage + ' Gb'
+      }else{
+        return Math.floor(this._storage) + ' Tb'
+      }
+    }
 
+    set storage (value) {
+        if ([128,256,512,1024].includes(value)) {
+            this._storage = value;
+        }else{
+          console.log(ns('You must provide a normalized value ! e.g : 128, 256, 512, 1024'))
+        }
+    }
+}
 
+const compt1 = new Computer1()
 
+console.log(`${s1} ${lns1(` => Line ${ln()} CLASS EXPRESSION : `)} ${s1}
 
+- We created a 'Computer1' class and encapsulated the 'storage' property.
 
-// ======= MAKING BOUND METHODS WITH CLASS =======
+- We instantiated a new object 'compt1'.
+
+- Now we use a getter function (get storage) to access the property. (compt1.storage) -----> ${ps(compt1.storage)}
+
+- As you can see, we have a human friendly output ${s2}`)
+
+compt1.storage = 1024
+
+console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
+- We changed the storage to 1024. (compt1.storage) -----> ${ps(compt1.storage)}
+
+- We also added a validation, if you set an invalid value, you will get an error mesasge. E.g (compt1.storage = 20): ${s1}`)
+
+compt1.storage = 20
+
+console.log(s4)
+
