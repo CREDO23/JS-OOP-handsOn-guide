@@ -76,7 +76,8 @@ console.log(` ${lns2(`From line ${ln() - 15} to line ${ln() - 2} : `)} ${s1}
 
 - We also added an EXPLICIT return STATEMENT inside the constructor ( return new Date()).
 
-- The (const admin1 = new Admin('Richard', 'LeGrand')) should create a new admin 'admin1' with a first (Richard) name and last (LeGrand).
+- The (const admin1 = new Admin('Richard', 'LeGrand')) should create a new admin 'admin1' with a first name (Richard)
+  and a last name (LeGrand).
 
 -  (admin1) -----> ${ns(admin1)} ${s4}`)
 
