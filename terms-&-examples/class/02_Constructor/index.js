@@ -15,10 +15,11 @@ import { s1, s4 } from "../../../helpers/separators.js"
  * 
  * We have seen that, when new instances are created, a plain javascript object is created where the
  * constructor will do the initialization, if there are properties defined out of the constructor
- * (in the class's body) the constructor will set all of them to that plain javascript object using
- * 'this' keyword to reference it. If there are other settings defined in the constructor, they will
- * be executed. When finished, the constructor will return that plain javascript object which will be 
- * our new instance.
+ * (in the class's body) the constructor will start setting all of them to that plain javascript object.
+ * If there are other settings defined in the constructor, they will be executed. 
+ * When finished, the constructor will return that plain javascript object which will be our new instance.
+ * 
+ * ==> [this] keyword is used to refer to the instance that is being created.
  * 
  * We have also seen that, when the constructor finishes its job, all methods defined in the class will be added to
  * its prototype (a javascript object that can contain methods or other properties) then set it to be the 

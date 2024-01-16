@@ -126,9 +126,11 @@ console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
   the initialization begins there, setting all of them in the plain object created then the constructor
   executes
   
-- ${bp("[2]")} All methods defined are added to the prototype of that function created after the class's declaration
-  (the constructor): Each function in JavaScript has a "prototype" property automatically created and attached to it after
-  its definition. The "prototype" property is an object in which we can add methods or properties; it is then used as the
+- ${bp("[2]")} All methods defined out of the constructor are added to the prototype of that function created 
+  after the class's declaration (the constructor): 
+  
+   ${nt('=> ')}Each function in JavaScript has a "prototype" property automatically created and attached to it after
+  its definition. It is an object in which we can add methods or properties; it is then used as the
   prototype of all instances created with the function attached to it, thus all of them will share the same methods.${s2}`)
 
 
