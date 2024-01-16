@@ -2,21 +2,37 @@
 
 <img src="./assets/images/oop.png">
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md) [![GitHub contributors](https://img.shields.io/github/contributors/CREDO23/JS-OOP-handsOn-guide.svg)](https://github.com/CREDO23/JS-OOP-handsOn-guide/graphs/contributors) [![GitHub last commit](https://img.shields.io/github/last-commit/CREDO23/JS-OOP-handsOn-guide.svg)](https://github.com/CREDO23/JS-OOP-handsOn-guide/commits/main)
+
 ## Introduction
 
 This repository is designed to provide hands-on demonstrations and clear examples in Javascript to help you understand and implement OOP concepts effectively.
 
-## Authors:
+## Getting started
 
-- @CREDO23 <bakerathierry@gmail.com>
+### Requirement
+
+- Having [nodejs](https://nodejs.org/en/download/current) installed in your computer. 
+ 
+To get started with the tutorials, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/CREDO23/JS-OOP-handsOn-guide.git`
+2. Install dependencies: `npm install`
+3. Go to the [tutorials's folder](/tutorials_&_demonstrations/):
+   - Here you will find concepts to learn about.
+   - Every concept is divided into chapters that are explained in JavaScript files.
+   - Start with the notes file that gives the overview before diving depper.
+   - Then, jump to the concept's chapters.
+   - Once you have read comments that explain code implementations inside files, you can test those
+     later to see the expected result in the console (demonstration) with `node index.js`.
 
 ## Table of contents
 
 - [Oriented Object Programming paradigm](<Oriented Object Programming paradigm>)
 - [Genesis](<Genesis of oriented object programming1>)
-- [Terminology & examples](<Terminology & examples>)
+- [Tutorials & demonstrations](<Tutorials & demonstrations>)
 
-# Oriented Object Programming paradigm
+## Oriented Object Programming paradigm
 
 Object-oriented object programming is a programming paradigm that is based on objects. In general, such objects are models of real-world entities in the program (e.g.: a person, a vehicle, a home, etc.); each entity has its own characteristics (properties/attributes) and actions (methods/procedures) that are organized in a single unit called object. Those predefined units allow you to speed up the programming process and simplify software maintenance.
 
@@ -24,7 +40,7 @@ Object-oriented object programming is a programming paradigm that is based on ob
 [Illustration]
 
 
-# Genesis of oriented object programming
+## Genesis of oriented object programming
 
 [Simula](https://en.wikipedia.org/wiki/Simula), a superset of [ALGOL 60](https://en.wikipedia.org/wiki/ALGOL) created between 1962 and 1967 by Kristen Nygaard and Ole-Johan Dahl, was the first language to offer object-oriented programming. An ALGOL program, represented by a block of code, included not just a sequence of operations on data, but also the structure of the data itself. Simula expanded on this idea by adding the concepts of encapsulation and inheritance. Simula also introduced crucial notions such as objects, classes, and virtual methods, which are now an integral aspect of object-oriented programming.
 
@@ -142,7 +158,7 @@ Simula and Smalltalk both made substantial contributions to the development of o
 
 It is critical to honor and recognize the amazing pioneers who shaped Object-Oriented Programming. Understanding the historical background and growth of OOP allows us to appreciate the strength and variety it provides as a programming paradigm.
 
-# Terminology & examples
+## Terminology & examples
   - [Object](/terms-&-examples/object/)
   - [Class](/terms-&-examples/class/)
   - Class-based vs prototype-based
@@ -158,3 +174,11 @@ It is critical to honor and recognize the amazing pioneers who shaped Object-Ori
   - Association
   - Open recursion
   - Mixins
+
+## Contributing
+
+We welcome contributions! If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository and create a new branch.
+2. Make your changes and submit a pull request.
+3. Ensure that your code adheres to the project's coding format.
