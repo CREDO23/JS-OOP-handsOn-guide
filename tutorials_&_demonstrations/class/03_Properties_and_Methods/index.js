@@ -114,7 +114,7 @@ const car2 = new Car2('Royce')
 const car21 = new Car2('TOYOTA')
 
 console.log(` ${lns2(`Line ${ln()} : `)} ${s1}
-- We created the 'Car2' class and added a static property 'totalCars' that store the amount of car created.
+- We created the 'Car2' class and added a static property 'totalCars' that stores the number of cars created.
 
 - We also create two instances (car2, car21). (Car2.totalCars) -----> ${ps(Car2.totalCars)}
 
