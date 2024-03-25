@@ -10,7 +10,7 @@ This software is designed to provide hands-on demonstrations and clear examples 
 
 ## Getting started
 
-### Requirement
+### Requirements
 
 - Having [nodejs](https://nodejs.org/en/download/current) installed in your computer. 
  
