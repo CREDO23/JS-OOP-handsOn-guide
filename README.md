@@ -179,6 +179,8 @@ It is critical to honor and recognize the amazing pioneers who shaped Object-Ori
 
 We welcome contributions! If you'd like to contribute to this project, please follow these guidelines:
 
-1. Fork the repository and create a new branch.
-2. Make your changes and submit a pull request.
-3. Ensure that your code adheres to the project's coding format.
+1. Fork the repository
+2. Create a new branch.
+3. Make your changes
+4. Submit a pull request.
+5. Ensure that your code adheres to the project's coding format.
